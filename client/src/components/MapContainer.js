@@ -6,11 +6,6 @@ const MapContainer = (props) => {
     const defaultCenter = props.defaultCenter;
     const nearbyUsers = props.nearbyUsers;
 
-    useEffect(() => {
-        console.log("Ayyyyyyyy, it's the nearby users!", nearbyUsers);
-        console.log("Ayyyyyyyy, it's defaultCenter!", defaultCenter)
-    }, [])
-
     const [ selected, setSelected ] = useState({});
 
     const onSelectHandler = item => {
@@ -18,13 +13,15 @@ const MapContainer = (props) => {
     }
 
     const mapStyles = {
+        position: "fixed",
+        left: "30%",
         height: "100vh",
-        width: "100%"
+        width: "70%"
     };
 
     return(
-        <LoadScript googleMapsApiKey="AIzaSyC791ll_yJ4VXqJT_EYcUifbH0hbzKE8Y8">
-            <GoogleMap mapContainerStyle={mapStyles} zoom={11} center={defaultCenter}>
+        <LoadScript googleMapsApiKey="AIzaSyALgbPKF_lTDAQF1YMf0Q9VUAQbs1zjZvc">
+            <GoogleMap mapContainerStyle={mapStyles} zoom={12} center={defaultCenter}>
                 {
                     nearbyUsers[0].map((item, i) => {
                         console.log("item", item)

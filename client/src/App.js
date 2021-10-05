@@ -4,6 +4,7 @@ import {BrowserRouter, Switch, Route } from 'react-router-dom'
 import SignIn from './views/SignIn';
 import Instruments from './views/Instruments';
 import Dashboard from './views/Dashboard';
+import ProfilePage from './views/ProfilePage';
 // import Instruments from './views/Instruments';
 
 function App() {
@@ -21,6 +22,10 @@ function App() {
 
           <Route exact path="/dashboard/:_id">
             <Dashboard />
+          </Route>
+
+          <Route exact path="/profile/:_id">
+            <ProfilePage/>
           </Route>
           
         </Switch>

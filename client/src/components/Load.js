@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import MapContainer from '../components/MapContainer';
+import NearbyUserList from './NearbyUsersList';
 
 const Load = props => {
     const {userData} = props;
@@ -23,7 +24,10 @@ const Load = props => {
         <div>
             {
                 nearbyUsers.length > 0 ?
-                <MapContainer userData={userData} defaultCenter={defaultCenter} nearbyUsers={nearbyUsers}/> : 
+                <div>
+                    <NearbyUserList users={nearbyUsers} />
+                    <MapContainer userData={userData} defaultCenter={defaultCenter} nearbyUsers={nearbyUsers}/>
+                </div>: 
                 null
             }
         </div>

@@ -50,3 +50,57 @@
   padding: 5px;
   width: 80px;
 }
+
+.navBar{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  background-color: rgb(227, 231, 235);
+  border-bottom: 2px solid rgb(30, 85, 51);;
+  z-index: 1;
+  box-shadow:20px black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px 0px 10px;
+}
+
+.nearbyUsersSideBar{
+  position: fixed;
+  left: 0;
+  top: 50px;
+  width: 30%;
+  height: 95%;
+  z-index: 1;
+  background-color: rgba(46, 104, 65, 0.527);
+  overflow-y: auto;
+}
+
+.userCard{
+  border: 1px solid black;
+  margin: 15px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+  background-color: rgb(203, 222, 243);
+  box-shadow: 2px 2px 2px rgba(41, 40, 40, 0.829);
+}
+
+.userCardLeft{
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+}
+
+.instrumentList{
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+}
+
+.userCardRight{
+  display: flex;
+  flex-flow: column;
+}

@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import Load from '../components/Load';
+import NavBar from '../components/NavBar';
 
 
 const Dashboard = props => {
@@ -25,10 +26,12 @@ const Dashboard = props => {
 
     return(
         <div>
-            <h1>Welcome, {user.firstName}!</h1>
             {
                 user.firstName ?
-                    <Load userData={user} defaultCenter={defaultCenter} /> :
+                    <div>
+                        <NavBar userData={user} />
+                        <Load userData={user} defaultCenter={defaultCenter} />
+                    </div>:
                     null
             }
             
