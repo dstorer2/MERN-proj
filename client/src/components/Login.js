@@ -25,7 +25,7 @@ const Login = (props) => {
             .then(res => {
                 console.log(res)
                 if(res.data.message === "login was successful!") {
-                    history.push("/dashboard/"+res.data.results._id)
+                    history.push("/dashboard/"+res.data._id)
                 } else {
                     setErrors({message: res.data.message})
                     console.log(res.data.message)

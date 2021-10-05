@@ -10,7 +10,7 @@ const NearbyUsersList = props => {
 
     return(
         <div className="nearbyUsersSideBar">
-            <h1>Nearby Musicians ⤵️</h1>
+            <h1>Nearby Musicians </h1>
             {
                 nearbyUsers[0].map((item, i) => {
                     console.log("item", item)

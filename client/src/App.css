@@ -66,6 +66,16 @@
   padding: 0px 10px 0px 10px;
 }
 
+.navRight{
+  display: flex;
+  width: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+.navRight > a{
+  margin-left: 7px;
+}
+
 .nearbyUsersSideBar{
   position: fixed;
   left: 0;

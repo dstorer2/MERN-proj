@@ -18,7 +18,9 @@ const ProfilePage  = props => {
     return(
         <div>
             <NavBar userData={user}/>
-            <h1>Profile Page</h1>
+            <div className="profileUserInfo">
+                
+            </div>
         </div>
     )
 }

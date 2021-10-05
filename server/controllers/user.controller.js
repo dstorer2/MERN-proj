@@ -26,7 +26,7 @@ module.exports.login = (req, res) => {
                     .then(passwordIsValid => {
                         if(passwordIsValid){
                             res.cookie("usertoken", jwt.sign({_id: user._id}, secret), {httpOnly: true})
-                            .json({message: "login was successful!"});
+                            .json({message: "login was successful!", _id: user._id});
                         }else{
                             res.json({message: "invalid login attempt"})
                         }
