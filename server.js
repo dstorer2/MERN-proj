@@ -4,7 +4,7 @@ const cors = require('cors');
 const cookies = require('cookie-parser')
 
 const port = 8000;
-const db_name = "in_tune_db"
+const db_name = "spread_the_jam"
 
 app.use(cors({
     credentials: true, origin: "http://localhost:3000"

@@ -13,7 +13,6 @@ const Load = props => {
         console.log("What is userData?", userData)
         axios.get("http://localhost:8000/api/user/nearbyUsers/"+userData.city)
             .then(res=>{
-                console.log("find all users function results:", res.data.results)
                 setNearbyUsers(res.data.results)
             })
             .catch(err=>console.log("something went wrong... poop :(", err))

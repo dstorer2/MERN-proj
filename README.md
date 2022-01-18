@@ -1,1 +1,1 @@
-#MERN-proj
+# ChoresApp.Web
